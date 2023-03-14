@@ -237,7 +237,7 @@ img{
 	padding: 167px 0 182px 0;
 	color: #504178;
 }
-.second-block--img{
+.block--img{
 	position: absolute;
 	right:calc(160px / 1440px * 100%);
 	bottom: 0;
@@ -323,7 +323,7 @@ img{
 		
 	}
 	.btn {}
-	.second-block--img {
+	.block--img {
 		right: 50%;
 		transform: translate(50%);
 		width: 215px;
@@ -480,9 +480,112 @@ img{
 	.third-block-container2--img {}
 }
 // ==================================
-
+.fourth-block {
+	position:relative;
+	padding: 168px 0 182px;
+	color: #504178;
+}
+.container {}
+.fourth-block--title {
+	text-align: center;
+	font-size: 50px;
+	line-height: 66px;
+}
+.fourth-block--items {
+	margin-bottom: 50px;
+	
+}
+.fourth-block--item {
+	border-bottom: 3px solid #4C3D74;
+	&:first-child{
+		border-top: 3px solid #4C3D74;
+	}
+}
+.fourth-block-item--title {
+	position: relative;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+	background: white;
+	padding: 15px 0;
+	&:before,&:after{
+		content:'';
+		transition-duration: 1s;
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		background: #504178;
+		width: 10px;
+		height:1px;
+	}
+	&:after{
+		transform: rotate(90deg);
+	}
+	&.active{
+		&:before{
+			transform: rotate(45deg);
+		}
+		&:after{
+			transform: rotate(135deg);
+		}
+	}
+	&.active ~ .fourth-block--text{
+		opacity: 1;
+		max-height: 150px;
+		padding-bottom: 15px;
+		visibility: visible;
+		overflow: auto;
+	}
+}
+.fourth-block--text {
+	transition-duration: .7s;
+	opacity: 0;
+	max-height: 0;
+	visibility: hidden;
+}
+.fourth-block--container {
+	gap:40px;
+	display: flex;
+	flex-wrap: wrap;
+	a{
+		order: 1;
+	}
+}
+.fourth-block-item-container--text {
+	font-size: 20px;
+	line-height: 150%;
+	font-weight: 900;
+	order: 2;
+	
+}
 @media(max-width: 768px){
-
+	.fourth-block {
+		padding: 95px 0 260px;
+	}
+	.container {}
+	.fourth-block--title {
+		font-size: 30px;
+		line-height: 150%;
+		max-width: 300px;
+		margin: 0 auto 57px;
+	}
+	.fourth-block--items {
+		padding: 0 57px;
+	}
+	.fourth-block--item {}
+	.fourth-block-item--title {}
+	.fourth-block--text {}
+	.fourth-block--container {
+		a{
+		order: 2;
+		}
+	}
+	.fourth-block-item-container--text {
+		order: 1;
+		text-align: center;
+		max-width: 300px;
+		margin: 0 auto;
+	}
 }
 // ==================================
 
