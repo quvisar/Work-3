@@ -275,6 +275,9 @@ img {
     max-width: 300px;
     max-height: 300px;
   }
+  .left-block--container-links {
+    margin-top: 27px;
+  }
 }
 .second-block {
   position: relative;
@@ -551,5 +554,9 @@ img {
   .container2-containe-item--title {
     font-size: 30px;
     line-height: 40px;
+  }
+  .container2-containe-item--sub-title {
+    font-size: 16px;
+    line-height: 150%;
   }
 }

@@ -225,6 +225,9 @@ img{
 		max-width: 300px;
 		max-height: 300px;
 	}
+	.left-block--container-links{
+		margin-top: 27px;
+	}
 }
 
 // ================================== block2
@@ -469,7 +472,10 @@ img{
 		font-size: 30px;
 		line-height: 40px;
 	}
-	.container2-containe-item--sub-title {}
+	.container2-containe-item--sub-title {
+		font-size: 16px;
+		line-height: 150%;
+	}
 	.container2-containe--text3 {}
 	.third-block-container2--img {}
 }
