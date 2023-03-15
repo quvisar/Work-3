@@ -28,7 +28,7 @@ ul {
   margin: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-size: inherit;
   margin: 0;
   font-weight: inherit;
@@ -678,5 +678,220 @@ img {
     text-align: center;
     max-width: 300px;
     margin: 0 auto;
+  }
+}
+.fifth-block {
+  padding: 168px 0 177px;
+  background: #4C3D74;
+  color: white;
+}
+
+.fifth-block--title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 66px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.fifth-block--items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto 93px;
+}
+
+.fifth-block--item--img {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 147px;
+  height: 147px;
+  -webkit-transform: translate(30%, -50%);
+          transform: translate(30%, -50%);
+}
+
+.fifth-block--item {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: relative;
+  color: #4C3D74;
+  padding: 57px 30px;
+  max-width: 364px;
+  border: 3px solid #4C3D74;
+  border-radius: 30px;
+  background: white;
+}
+.fifth-block--item:hover {
+  -webkit-box-shadow: 0 0 15px 2px white;
+          box-shadow: 0 0 15px 2px white;
+}
+.fifth-block--item:hover .fifth-block--item--img {
+  top: -10px;
+}
+.fifth-block--item .btn {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+.fifth-block--item .btn:hover {
+  background: #4C3D74;
+  color: white;
+}
+
+.fifth-block-item--title {
+  margin-bottom: 15px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.fifth-block-item--points {
+  margin-bottom: 18px;
+}
+
+.fifth-block-item--posnt {
+  padding-left: 25px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  position: relative;
+}
+.fifth-block-item--posnt:before, .fifth-block-item--posnt:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 15px;
+  height: 4px;
+  background: #4C3D74;
+}
+.fifth-block-item--posnt:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.point--minus:before {
+  width: 10px;
+}
+.point--minus:after {
+  display: none;
+}
+
+.fifth-block-item--sub-title {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 11px;
+}
+
+.fifth-block-item--price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pre-price {
+  font-size: 12px;
+  line-height: 150%;
+}
+.pre-price span {
+  font-weight: 900;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.fifth-block--contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fifth-block--contain--btn {
+  padding: 20px 40px;
+}
+.fifth-block--contain--btn:hover {
+  background: #4C3D74;
+  color: white;
+}
+
+.fifth-block-contain--img {
+  width: 64px;
+  height: 64px;
+  position: relative;
+}
+
+.fifth-block-contain--text {
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .fifth-block {
+    padding: 90px 0;
+  }
+  .fifth-block--title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .fifth-block--items {
+    padding: 0 25px;
+    gap: 70px;
+  }
+  .fifth-block--item--img {
+    width: 98px;
+    height: 98px;
+  }
+  .fifth-block--item {
+    margin: 0 auto;
+    padding: 57px 0 57px 20px;
+  }
+  .fifth-block--item .btn {
+    padding: 20px 50px;
+  }
+  .fifth-block--contain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 25px;
+  }
+  .fifth-block-contain--text {
+    text-align: center;
   }
 }
